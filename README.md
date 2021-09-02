@@ -5,7 +5,7 @@ In this project, I experienced how to dockerize a project with Dockerfile, then 
 This is a ```Todos Application``` that``` Mysql database``` and ```Node``` are used. With ```volumes``` your datas will not disappear for each starting the application.
 
 To go to <b> Docker Hub repository:  https://hub.docker.com/r/basary/todo_app </b> <br>
-To run the application use the following <b>docker-compose.yml: </b> 
+To run the application clone the git repository use the following <b>docker-compose.yml: </b> 
 ```
 version: "3.7"
 
