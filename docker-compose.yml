@@ -1,8 +1,9 @@
 version: "3.7"
 
 services:
-  app:
-    image: node:12-alpine
+  node_app:
+    container_name: "nodeApp"
+    image: basary/todo_app:node
     command: sh -c "yarn install && yarn run dev"
     ports:
       - 3000:3000
@@ -16,7 +17,8 @@ services:
       MYSQL_DB: todos
 
   db:
-    image: mysql:5.7
+    container_name: "mysqlDb"
+    image: basary/todo_app:mysqlDb
     volumes:
       - todo-mysql-data:/var/lib/mysql
     environment:
